@@ -1,24 +1,58 @@
-# README
+# Movie app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- RUBY on RAILS
+- PostgeSQL
+- api
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+> Clone the repository to your local machine
 
-* System dependencies
+```
+$ git clone git@github.com:rOluochKe/movie-api.git
+```
 
-* Configuration
+> cd into the directory
 
-* Database creation
+```
+$ cd movie-api
+```
 
-* Database initialization
+> Then install the needed gems (while skipping any gems needed only in production):
 
-* How to run the test suite
+```
+$ bundle install --without production
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+> Next, migrate the database:
 
-* Deployment instructions
+```
+$ rails db:migrate
+```
 
-* ...
+> Test, run test with RSpec:
+
+```
+$ rspec
+```
+
+> Finally, you'll be ready to run the app in a local server:
+
+```
+$ rails server
+```
+## Designed and developed by
+
+[Raymond Oluoch](https://github.com/rOluochKe)
+
+## Contributing
+
+1. Fork it (git clone git@github.com:rOluochKe/movie-api.git/fork)
+2. Create your feature branch (git checkout -b feature/[choose-a-name])
+3. Commit your changes (git commit -am 'What this commit will fix/add')
+4. Push to the branch (git push origin feature/[chosen name])
+5. Create a new Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE.md) file for details.
